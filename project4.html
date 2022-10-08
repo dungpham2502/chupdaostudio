@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&family=Righteous&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: roboto;
+        }
+        
+        #head {
+            width: 100vw;
+            height: 120vh;
+            background-image: url("image/project4/background.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #head {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        h1 {
+            color: white;
+            text-align: center;
+            letter-spacing: 4px;
+            font-size: 39px;
+            padding-bottom: 25px;
+        }
+        
+        #view-gal {
+            font-size: 10px;
+            padding: 14px 20px;
+            color: white;
+            background: 0;
+            border: 1px solid white;
+            margin-top: 20px;
+            transition: 0.15s;
+            border-radius: 2px
+        }
+        
+        #view-gal:hover {
+            background-color: white;
+            color: black;
+        }
+        
+        #main {
+            padding-top: 20px;
+            padding-left: 17px;
+        }
+        
+        h2 {
+            font-weight: 5px;
+        }
+        
+        .album-name {
+            font-weight: 500;
+            letter-spacing: 1px;
+            font-size: 20px;
+            transition: 1s;
+        }
+        
+        .studio-name {
+            margin-top: 5px;
+            font-size: 11px;
+            letter-spacing: 1px;
+            color: rgb(113, 108, 108);
+        }
+        
+        .album-grid {
+            display: flex;
+            flex-direction: row;
+            margin-top: 18px;
+            margin-left: -5px;
+            margin-right: 10px;
+        }
+        
+        #footer {
+            text-align: center;
+        }
+        
+        #back-to-top {
+            letter-spacing: 2px;
+            font-size: 10px;
+            padding: 15px 25px;
+            color: white;
+            background: rgb(61, 51, 51);
+            border: 0;
+            margin-top: 25px;
+            transition: 0.15s;
+            border-radius: 2px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        
+        #back-to-top:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+        
+        #back-to-top {
+            letter-spacing: 2px;
+            font-size: 10px;
+            padding: 15px 25px;
+            color: white;
+            background: rgb(61, 51, 51);
+            border: 0;
+            margin-top: 25px;
+            transition: 0.15s;
+            border-radius: 2px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        
+        #back-to-top:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+        
+        #back-to-homepage {
+            letter-spacing: 2px;
+            font-size: 10px;
+            padding: 15px 25px;
+            color: white;
+            background: rgb(61, 51, 51);
+            border: 0;
+            margin-top: 25px;
+            transition: 0.15s;
+            border-radius: 2px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        
+        #back-to-homepage:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div id="head">
+        <h1>Họp Lớp A4 15-19</h1>
+        <button id="view-gal">VIEW GALLERY</button>
+    </div>
+    <div id="main">
+        <div id="nav">
+            <div class="album-name">Họp Lớp A4 15-19</div>
+            <div class="studio-name">Bọn Mình Chụp Dạo Studio</div>
+        </div>
+        <div class="album-grid">
+            <div class="image-grid"></div>
+            <div class="image-grid"></div>
+        </div>
+    </div>
+    </div>
+    <div id="footer">
+        <button id="back-to-top">BACK TO TOP</button>
+        <button id="back-to-homepage" onclick="backToHomepage()">BACK TO HOMEPAGE</button>
+    </div>
+
+
+
+    <script>
+        let imageArray = [
+                "image/project4/img1.jpeg",
+                "image/project4/img2.jpeg",
+                "image/project4/img3.jpeg",
+                "image/project4/img4.jpeg",
+                "image/project4/img5.jpeg",
+                "image/project4/img6.jpeg",
+                "image/project4/img7.jpeg",
+                "image/project4/img8.jpeg",
+                "image/project4/img9.jpeg",
+                "image/project4/img10.jpeg",
+                "image/project4/img11.jpeg",
+                "image/project4/img12.jpeg",
+                "image/project4/img13.jpeg",
+                "image/project4/img14.jpeg",
+                "image/project4/img15.jpeg",
+                "image/project4/img16.jpeg",
+                "image/project4/img17.jpeg",
+                "image/project4/img18.jpeg",
+                "image/project4/img19.jpeg",
+                "image/project4/img20.jpeg",
+                "image/project4/img21.jpeg",
+                "image/project4/background.jpeg",
+            ]
+            // tìm độ dài của album-grid
+        let imageGridNumber = 2;
+        let imageGridWidth = null;
+        let imageWidth = null;
+        let imageMargin = null;
+        let imageHeight = null;
+        const albumGrid = document.getElementsByClassName("album-grid")[0];
+        let screenWidth = 0;
+
+        setInterval(function() {
+            if (screenWidth != albumGrid.offsetWidth) {
+                albumGrid.innerHTML = null;
+                // tìm độ dài của album-grid
+                screenWidth = albumGrid.offsetWidth;
+                // tìm xem cần bao nhiêu thẻ smaller-album-grid
+                let proposalNumber = Math.floor(screenWidth / 300);
+                if (proposalNumber <= 2) {
+                    imageGridNumber = 2;
+                } else if (proposalNumber == 3) {
+                    imageGridNumber = 3;
+                } else {
+                    imageGridNumber = 4;
+                }
+                // tạo thẻ div, tạo class và nhét vào album-grid
+                for (let i = 0; i < imageGridNumber; i++) {
+                    let imageGrid = document.createElement("div");
+                    imageGrid.setAttribute("class", "image-grid");
+                    albumGrid.appendChild(imageGrid);
+                }
+                // tính width của 1 thẻ và set style
+                imageGridWidth = screenWidth / imageGridNumber;
+                for (let i = 0; i < document.getElementsByClassName("image-grid").length; i++) {
+                    document.getElementsByClassName("image-grid")[i].style.width = `${imageGridWidth}px`
+                }
+                // tạo thẻ image và gắn vào từng thẻ thẻ image-grid theo thứ tự
+                for (let i = 0; i < imageArray.length; i++) {
+                    let image = document.createElement("img");
+                    image.setAttribute("class", "album-grid-photo");
+                    image.setAttribute("src", imageArray[i]);
+                    document.getElementsByClassName("image-grid")[i % imageGridNumber].appendChild(image);
+                }
+                // tính margin, width của image
+                if (imageGridNumber = 2) {
+                    imageMargin = imageGridWidth / 60;
+                    imageWidth = imageGridWidth * 29 / 30;
+                } else {
+                    imageMargin = 2.5;
+                    imageWidth = imageGridWidth - 5;
+                }
+                // set style cho ảnh
+                for (let i = 0; i < document.getElementsByClassName("album-grid-photo").length; i++) {
+                    document.getElementsByClassName("album-grid-photo")[i].style.width = `${imageWidth}px`;
+                    document.getElementsByClassName("album-grid-photo")[i].style.marginLeft = `${imageMargin}px`;
+                    document.getElementsByClassName("album-grid-photo")[i].style.marginTop = `${imageMargin}px`;
+                    document.getElementsByClassName("album-grid-photo")[i].style.boxShadow = "-3px 5px 15px black";
+                }
+            }
+        }, 100)
+
+        const backGroundHeight = document.getElementById('head').offsetHeight
+        const btnViewGallery = document.getElementById('view-gal');
+        btnViewGallery.addEventListener('click', () => {
+            window.scrollTo({
+                top: backGroundHeight,
+                left: 0,
+                behavior: "smooth"
+            });
+        });
+
+        const btnScrollToTop = document.getElementById('back-to-top');
+        btnScrollToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            });
+        });
+
+        function backToHomepage() {
+            window.location.href = "index.html"
+        }
+    </script>
+</body>
+
+
+
+</html>

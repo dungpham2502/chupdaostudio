@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #Feffff
+}
+
+.navbar {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.about-us-nav {
+    color: #Feffff;
+}
+
+.about-us-nav:hover {
+    transition: 0.25s;
+}
+
+.dropdown-toggle {
+    color: #Feffff;
+}
+
+.dropdown-toggle:hover {
+    transition: 0.25s;
+}
+
+.navbar {
+    border: 0px;
+    color: #282612;
+}
+
+.jumbotron {
+    background-color: #DEF2f1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navbar {
+    background-color: #1dccc3;
+}
+
+.jumbotron p {
+    padding-top: 15px;
+    font-size: 15px;
+}
+
+.nav-logo {
+    color: #Feffff;
+}
+
+#logo {
+    width: 70px;
+    border-radius: 100%;
+}
+
+.thumbnail {
+    padding-bottom: 20px;
+    border: 0;
+}
+
+.thumbnail {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.thumbnail:hover {
+    opacity: 0.7;
+}
+
+.thumbnail img {
+    height: 250px;
+    object-fit: cover;
+    object-position: unset;
+    margin-bottom: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    ;
+}
+
+.album-name {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#logo-2 {
+    width: 70px;
+    border-radius: 100%;
+    display: block;
+    margin: 10px auto;
+}
+
+footer {
+    background-color: #DEF2f1;
+    padding-bottom: 70px;
+    padding-top: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.project-info {
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    list-style: none;
+}
+
+.project-info {
+    margin-top: 15px;
+}
+
+.project-info li {
+    margin-top: 3px;
+}
+
+#social-media-section {
+    text-align: center;
+}
+
+.social-media img {
+    width: 25px;
+}
+
+#brand-label {
+    padding-top: 10px;
+}
